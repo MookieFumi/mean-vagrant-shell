@@ -7,9 +7,8 @@ Para decargar e instalar Vagrant debemos seguir las instrucciones y recomendacio
 Esto simplemente nos instala y nos prepara el entorno para poder ejecutar Vagrant desde línea de comandos.
 Es necesario tener instalado en el equipo cualquier proveedor de virtualización. 
  
-## Paso 2. Inicializando y configurando nuestro primer Vagrant. ##
+## Paso 2. Inicializando y configurando nuestro primera máquina virtual. ##
 Desde un terminal y situados en la carpeta que queremos trabajar el primer paso es inicializar el entorno.
-
 
     vagrant init
 
@@ -20,7 +19,7 @@ El contenido de Vagrantfile en su mayoría está comentado y se refiere siempre 
     config.vm.box = "ubuntu/trusty32"
     config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-i386-vagrant-disk1.box"
 
-Lo siguiente que podemos hacer es configurar el contenido de nuestra máquina virtual, es decir, que herramientas incluiremos e instalaremos en ella. Tenemos muchas opciones de aprovisionamiento (Provisioning) y nos vamos a quedar quizás con la menos cool del momento que es vía shell de linux. Las otras opciones más cool de aprovisionamiento son chef, puppet que en un futuro espero poder hablar un poquito de ellas.
+Lo siguiente que podemos hacer es configurar el contenido de nuestra máquina virtual, es decir, que herramientas incluiremos e instalaremos en ella. Tenemos muchas opciones de aprovisionamiento (Provisioning) y nos vamos a quedar quizás con la menos cool del momento que es vía shell. Las otras opciones más cool de aprovisionamiento son chef o puppet y que en un futuro espero poder hablar un poquito de ellas.
 
     config.vm.provision "shell", path: "provision/setup.sh"
 
@@ -45,7 +44,7 @@ Esto quiere decir que realice la provisión mediante el shell ejecutando el scri
     sudo apt-get update
     sudo apt-get install mongodb-org -y
 
-## Paso 3. Levantando nuestro vagrant. ##
+## Paso 3. Levantando nuestra máquina virtual. ##
 
 El siguiente paso es levantar nuestro vagrant (máquina virtual), la primera vez es la más  costosa ya que se encargará de instalar e inicializar dicha máquina. 
 
@@ -84,7 +83,7 @@ Estos son los comandos básicos que tiene Vagrant desde terminal.
      up              starts and provisions the vagrant environment
      version         prints current and latest Vagrant version 
 
-Enlaces interesantes.
+Enlaces de interés/ referencias.
 
 - [Vagrant.](https://www.vagrantup.com/)
 - [VirtualBox.](https://www.virtualbox.org/)
