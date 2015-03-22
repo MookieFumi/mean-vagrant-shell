@@ -1,0 +1,23 @@
+{
+  "name": "mean-vagrant-shell",
+  "version": "1.0.0",
+  "description": "Vagrant es una herramienta para la creación y configuración de entornos de desarrollo virtualizados. Inicialmente trabajaba como único proveedor con VirtualBox pero desde la versión 1.1 es \"multi-proveedor\", pudiendo trabajar entre otros con Hyper-V, WMware, etc.\r Como un primer acercamiento a la herramienta vamos a montar un **Ubuntu 14.04.2 LTS** con todas las herramientas del **stack MEAN** preparadas (Mongo, Express, Angular y NodeJs) con VirtualBox como proveedor.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MookieFumi/mean-vagrant-shell.git"
+  },
+  "author": "Miguel Angel Martin Hernandez <mookiefumi@outlook.com> (http://www.mookiefumi.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MookieFumi/mean-vagrant-shell/issues"
+  },
+  "homepage": "https://github.com/MookieFumi/mean-vagrant-shell",
+  "dependencies": {
+    "express": "^4.12.3",
+    "mongoose": "^3.8.25"
+  }
+}

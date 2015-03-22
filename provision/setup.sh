@@ -1,10 +1,12 @@
 #!/bin/bash
 
 echo "#Update ubuntu"
-sudo do-release-upgrade -f DistUpgradeViewNonInteractive
+echo "sudo do-release-upgrade -f DistUpgradeViewNonInteractive"
 
 echo "#Install curl"
 sudo apt-get install -y curl 
+
+sudo apt-get install gcc make build-essential -y
 
 echo "#Install nodejs v.0.12"
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
@@ -20,5 +22,6 @@ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | 
 deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
 sudo apt-get update
 sudo apt-get install mongodb-org -y
+sudo npm install mongoose
 
-sudo apt-get upgrade -y
+echo "sudo apt-get upgrade -y"

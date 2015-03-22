@@ -2,10 +2,11 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  # https://docs.vagrantup.com.
-
   config.vm.box = "ubuntu/trusty32"
   config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-i386-vagrant-disk1.box"
+  config.vm.network "private_network", ip: "192.168.33.10"
+  config.vm.provision "shell", path: "provision/setup.sh"
+end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -61,6 +62,3 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
-
-  config.vm.provision "shell", path: "provision/setup.sh"
-end
