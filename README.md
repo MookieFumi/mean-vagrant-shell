@@ -17,7 +17,7 @@ El siguiente paso es configurar el entorno y seleccionar la caja (box) de nuestr
 El contenido de Vagrantfile en su mayoría está comentado y se refiere siempre a opciones que son auto-explicativas (Create a private network, create a public network, share an additional folder, etc.). Insisto que para algo básico, como es este caso, simplemente deberemos modificar las siguientes líneas e indicar la caja preferida así como la url de descarga de la misma.
 
     config.vm.box = "ubuntu/trusty32"
-    config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-i386-vagrant-disk1.box"
+    config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/trusty-server-cloudimg-i386-juju-vagrant-disk1.box"
 
 Lo siguiente que podemos hacer es configurar el contenido de nuestra máquina virtual, es decir, que herramientas incluiremos e instalaremos en ella. Tenemos muchas opciones de aprovisionamiento (Provisioning) y nos vamos a quedar quizás con la menos cool del momento que es vía shell. Las otras opciones más cool de aprovisionamiento son chef o puppet y que en un futuro espero poder hablar un poquito de ellas.
 
