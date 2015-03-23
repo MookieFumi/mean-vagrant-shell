@@ -14,7 +14,7 @@ Desde un terminal y situados en la carpeta que queremos trabajar el primer paso 
 
 El siguiente paso es configurar el entorno y seleccionar la caja (box) de nuestro entorno (Caja es una imagen base). El catálogo oficial de cajas lo tenéis [aquí](https://atlas.hashicorp.com/boxes/search). Para este ejemplo usaremos **ubuntu/trusty32** y la forma de indicarlo es modificando el archivo (Vagrantfile) que hemos creado mediante la instrucción anterior.
 
-El contenido de Vagrantfile en su mayoría está comentado y se refiere siempre a opciones que son auto-explicativas (Create a private network, create a public network, share an additional folder, etc.). Insisto que para algo básico, como es este caso, simplemente deberemos modificar la línea que hace referencia a la caja que queramos montar.
+El contenido de Vagrantfile en su mayoría está comentado y se refiere siempre a opciones que son auto-explicativas (Create a private network, create a public network, share an additional folder, etc.). Insisto que para algo básico, como es este caso, simplemente deberemos modificar la línea que hace referencia al nombre de la caja que queramos montar.
 
     config.vm.box = "ubuntu/trusty32"
 
