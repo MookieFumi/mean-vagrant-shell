@@ -12,12 +12,12 @@ Desde un terminal y situados en la carpeta que queremos trabajar el primer paso 
 
     vagrant init
 
-El siguiente paso es configurar el entorno y seleccionar la caja (box) de nuestro entorno (Caja es una imagen base). El catálogo oficial de cajas lo tenéis [aquí](https://atlas.hashicorp.com/boxes/search). Para este ejemplo usaremos **ubuntu/trusty32** y la forma de indicarlo es modificando el archivo (Vagrantfile) que hemos creado mediante la instrucción anterior.
+El siguiente paso es configurar el entorno y seleccionar la caja (box) de nuestro entorno (Caja es una imagen base). El catálogo oficial de cajas lo tenéis [aquí](https://atlas.hashicorp.com/boxes/search). Para este ejemplo usaremos **hashicorp/precise32"** y la forma de indicarlo es modificando el archivo (Vagrantfile) que hemos creado mediante la instrucción anterior.
 
 El contenido de Vagrantfile en su mayoría está comentado y se refiere siempre a opciones que son auto-explicativas (Create a private network, create a public network, share an additional folder, etc.). Insisto que para algo básico, como es este caso, simplemente deberemos modificar las siguientes líneas e indicar la caja preferida así como la url de descarga de la misma.
 
-    config.vm.box = "ubuntu/trusty32"
-    config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/trusty-server-cloudimg-i386-juju-vagrant-disk1.box"
+    config.vm.box = "hashicorp/precise32"
+    config.vm.box_url = "https://vagrantcloud.com/hashicorp/boxes/precise32/versions/1.0.0/providers/virtualbox.box"
 
 Lo siguiente que podemos hacer es configurar el contenido de nuestra máquina virtual, es decir, que herramientas incluiremos e instalaremos en ella. Tenemos muchas opciones de aprovisionamiento (Provisioning) y nos vamos a quedar quizás con la menos cool del momento que es vía shell. Las otras opciones más cool de aprovisionamiento son chef o puppet y que en un futuro espero poder hablar un poquito de ellas.
 
