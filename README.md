@@ -1,6 +1,6 @@
 # Vagrant. Primer acercamiento.
 Vagrant es una herramienta para la creación y configuración de entornos de desarrollo virtualizados. Inicialmente trabajaba como único proveedor con VirtualBox pero desde la versión 1.1 es "multi-proveedor", pudiendo trabajar entre otros con Hyper-V, WMware, etc.
-Como un primer acercamiento a la herramienta vamos a montar un **Ubuntu 14.04.2 LTS** con todas las herramientas del **stack MEAN** preparadas (Mongo, Express, Angular y NodeJs) con VirtualBox como proveedor.
+Como un primer acercamiento a la herramienta vamos a montar un **Ubuntu 12.04 LTS 32-bit** con todas las herramientas del **stack MEAN** preparadas (Mongo, Express, Angular y NodeJs) con VirtualBox como proveedor.
 
 ## Paso 1. Instalación de Vagrant.  ##
 Para decargar e instalar Vagrant debemos seguir las instrucciones y recomendaciones de [su página oficial.](http://www.vagrantup.com/downloads.html)
@@ -12,7 +12,7 @@ Desde un terminal y situados en la carpeta que queremos trabajar el primer paso 
 
     vagrant init
 
-El siguiente paso es configurar el entorno y seleccionar la caja (box) de nuestro entorno (Caja es una imagen base). El catálogo oficial de cajas lo tenéis [aquí](https://atlas.hashicorp.com/boxes/search). Para este ejemplo usaremos **ubuntu/trusty32** y la forma de indicarlo es modificando el archivo (Vagrantfile) que hemos creado mediante la instrucción anterior.
+El siguiente paso es configurar el entorno y seleccionar la caja (box) de nuestro entorno (Caja es una imagen base). El catálogo oficial de cajas lo tenéis [aquí](https://atlas.hashicorp.com/boxes/search). Para este ejemplo usaremos **hashicorp/precise32** y la forma de indicarlo es modificando el archivo (Vagrantfile) que hemos creado mediante la instrucción anterior.
 
 El contenido de Vagrantfile en su mayoría está comentado y se refiere siempre a opciones que son auto-explicativas (Create a private network, create a public network, share an additional folder, etc.). Insisto que para algo básico, como es este caso, simplemente deberemos modificar la línea que hace referencia al nombre de la caja que queramos montar.
 
