@@ -16,7 +16,7 @@ El siguiente paso es configurar el entorno y seleccionar la caja (box) de nuestr
 
 El contenido de Vagrantfile en su mayoría está comentado y se refiere siempre a opciones que son auto-explicativas (Create a private network, create a public network, share an additional folder, etc.). Insisto que para algo básico, como es este caso, simplemente deberemos modificar la línea que hace referencia al nombre de la caja que queramos montar.
 
-    config.vm.box = "ubuntu/trusty32"
+    config.vm.box = "hashicorp/precise32"
 
 Lo siguiente que podemos hacer es configurar el contenido de nuestra máquina virtual, es decir, que herramientas incluiremos e instalaremos en ella. Tenemos muchas opciones de aprovisionamiento (Provisioning) y nos vamos a quedar quizás con la menos cool del momento que es vía shell. Las otras opciones más cool de aprovisionamiento son chef o puppet y que en un futuro espero poder hablar un poquito de ellas.
 
@@ -50,7 +50,7 @@ El siguiente paso es levantar nuestro vagrant (máquina virtual), la primera vez
     vagrant up
 Al finalizar de levantar nuestro vagrant podremos acceder a la máquina virtual mediante el comando vagrant ssh recibiendo el típico mensaje de bienvenido de las máquinas Ubuntu/ Linux.
 
-    Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-46-generic i686)
+    Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic-pae i686)
 
 ## Comandos básicos en Vagrant. ##
 
